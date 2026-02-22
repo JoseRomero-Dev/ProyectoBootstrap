@@ -45,7 +45,7 @@
         </div>
     </nav>
     <section class="flex-fill">
-        <article class="container">
+        <article class="container w-50">
             <div class="row mt-2">
                 <div class="col-12 text-center">
                     <h2>Solicita tu presupuesto</h2>
@@ -53,48 +53,40 @@
                 </div>
             </div>
             <!--FORMULARIO-->
-            <form class="row g-3">
+            <form class="row g-3 mb-2">
                 <div class="col-md-6">
+                    <label for="inputName" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="inputName">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputApellidos" class="form-label">Apellidos</label>
+                    <input type="text" class="form-control" id="inputApellidos">
+                </div>
+                <div class="col-12">
                     <label for="inputEmail4" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="inputEmail4">
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="email@pixelnova.com">
                 </div>
                 <div class="col-md-6">
-                    <label for="inputPassword4" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="inputPassword4">
-                </div>
-                <div class="col-12">
-                    <label for="inputAddress" class="form-label">Address</label>
-                    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-                </div>
-                <div class="col-12">
-                    <label for="inputAddress2" class="form-label">Address 2</label>
-                    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                    <label for="telefono" class="form-label">Teléfono</label>
+                    <input type="tel" class="form-control" id="telefono" placeholder="666555444">
                 </div>
                 <div class="col-md-6">
-                    <label for="inputCity" class="form-label">City</label>
+                    <label for="inputCity" class="form-label">Ciudad</label>
                     <input type="text" class="form-control" id="inputCity">
                 </div>
-                <div class="col-md-4">
-                    <label for="inputState" class="form-label">State</label>
-                    <select id="inputState" class="form-select">
-                    <option selected>Choose...</option>
-                    <option>...</option>
-                    </select>
-                </div>
-                <div class="col-md-2">
-                    <label for="inputZip" class="form-label">Zip</label>
-                    <input type="text" class="form-control" id="inputZip">
+                <div class="col-12">
+                    <label for="inputInfo" class="form-label">Cuentanos</label>
+                    <textarea class="form-control" id="inputInfo" rows="3" placeholder="Escribe aquí..."></textarea>
                 </div>
                 <div class="col-12">
                     <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="gridCheck">
-                    <label class="form-check-label" for="gridCheck">
-                        Check me out
-                    </label>
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">Aceptar política de privacidad</label>
                     </div>
                 </div>
-                <div class="col-12">
-                    <button type="submit" class="btn btn-primary">Sign in</button>
+                <div class="col-12 d-flex align-items-center justify-content-center">
+                    <button type="submit" class="btn btn-primary me-2">Enviar</button>
+                    <button type="reset" class="btn btn-primary">Vaciar</button>
                 </div>
             </form>
         </article>
